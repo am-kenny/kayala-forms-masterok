@@ -1,6 +1,6 @@
 @echo off
 cd /d %~dp0
 echo Pulling latest changes...
-git pull
+git pull https://github.com/am-kenny/kayala-forms-masterok.git main
 pause
 
