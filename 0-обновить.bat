@@ -6,14 +6,16 @@ if not exist ".git" (
     echo No git repository found. Initializing...
     git init
 
-    REM Optional: Set remote if not set
-    git remote add origin https://github.com/am-kenny/kayala-forms-masterok.git
+    echo Adding remote origin...
+    git remote add origin https://github.com/am-kenny/kayala-forms-masterok
 
-    REM Optional: Checkout the main branch (adjust if needed)
-    git checkout -b master
+    echo Fetching remote master branch...
+    git fetch origin master
+
+    echo Checking out master branch from origin...
+    git checkout -b master origin/master
 )
 
 echo Pulling latest changes...
 git pull
 pause
-
