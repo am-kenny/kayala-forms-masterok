@@ -16,10 +16,12 @@ if not exist ".git" (
 
     echo Hard-resetting branch...
     git reset --hard origin/master
+    echo Initialization complete!
 ) else (
     echo Pulling latest changes...
     git fetch
     git reset --hard origin/master
+    echo Update complete!
 )
 
 pause
