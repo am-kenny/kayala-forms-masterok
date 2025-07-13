@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CellReportTemplate>
+  <Properties DefaultRowsCount="15" DefaultColumnsCount="15">
+    <DocumentName>Заказ товаров таблица</DocumentName>
+  </Properties>
+  <ExportSettings RunExcelAfterExport="true" />
+  <DisplaySettings FrozenColumns="0" FrozenRows="4" ShowGridLines="false" ShowDesignerGridLines="true" ShowCurrentRows="true" ShowBookMarks="false" ShowResizers="false" ShowDesignerResizers="true" Scale="1" />
+  <PrintSettings Landscape="true" Copies="1" AutoFitWidthPages="1" Scale="1">
+    <Margins Top="9.906" Left="9.906" Right="9.906" Bottom="9.906" />
+  </PrintSettings>
+  <Sections>
+    <Section ID="Header">
+      <LeftTop Row="0" Column="0" />
+      <RightBottom Row="2" Column="17" />
+    </Section>
+    <Section ID="TableRow">
+      <LeftTop Row="4" Column="0" />
+      <RightBottom Row="4" Column="9" />
+    </Section>
+    <Section ID="Footer">
+      <LeftTop Row="6" Column="0" />
+      <RightBottom Row="8" Column="9" />
+    </Section>
+    <Section ID="TableHeader" IsHeaderFixed="true">
+      <LeftTop Row="3" Column="0" />
+      <RightBottom Row="3" Column="9" />
+    </Section>
+    <Section ID="AddTableHeader">
+      <LeftTop Row="3" Column="18" />
+      <RightBottom Row="3" Column="18" />
+    </Section>
+    <Section ID="AddTableRow">
+      <LeftTop Row="4" Column="18" />
+      <RightBottom Row="4" Column="18" />
+    </Section>
+    <Section ID="AddFooter">
+      <LeftTop Row="6" Column="18" />
+      <RightBottom Row="8" Column="18" />
+    </Section>
+    <Section ID="TableHeaderEnd">
+      <LeftTop Row="3" Column="10" />
+      <RightBottom Row="3" Column="17" />
+    </Section>
+    <Section ID="TableRowEnd">
+      <LeftTop Row="4" Column="10" />
+      <RightBottom Row="4" Column="17" />
+    </Section>
+    <Section ID="FooterEnd">
+      <LeftTop Row="6" Column="10" />
+      <RightBottom Row="8" Column="17" />
+    </Section>
+  </Sections>
+  <BookMarks />
+  <Table RowsCount="9" ColumnsCount="19">
+    <Column Width="15" />
+    <Column Width="5" />
+    <Column Width="5" />
+    <Column Width="5" />
+    <Column Width="5" />
+    <Column Width="5" />
+    <Column Width="5" />
+    <Column Width="5" />
+    <Column Width="5" />
+    <Column Width="65" />
+    <Column Width="18" />
+    <Column Width="20" />
+    <Column Width="19" />
+    <Column Width="21" />
+    <Column Width="22" />
+    <Column Width="18" />
+    <Column Width="20" />
+    <Column Width="20" />
+    <Column Width="30.42085" />
+    <Row Height="6">
+      <Cell ColSpan="12">
+        <TextContent Style="Заголовок">
+          <Text>Данные для заказа товаров</Text>
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="4.7">
+      <Cell ColSpan="12" Style="Стиль 1">
+        <DateTimeContent Style="ДатаВремя">
+          <Param Name="ТекДата" Target="Value" Expression="CurrentDate" />
+        </DateTimeContent>
+      </Cell>
+    </Row>
+    <Row Height="2" />
+    <Row Height="9">
+      <Cell Style="ЗаголовокТаблицы">
+        <TextContent Style="ЗаголовокТаблицы">
+          <Text>№</Text>
+        </TextContent>
+      </Cell>
+      <Cell ColSpan="8" Style="ЗаголовокТаблицы">
+        <TextContent Style="ЗаголовокТаблицы">
+          <Param Name="Наименование" Target="Text" />
+          <Text>Товар</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="10" Style="ЗаголовокТаблицы">
+        <TextContent Style="ЗаголовокТаблицы">
+          <Text>Код</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="ЗаголовокТаблицы">
+        <TextContent Style="ЗаголовокТаблицы">
+          <Text>Ед. изм.</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="ЗаголовокТаблицы">
+        <TextContent Style="ЗаголовокТаблицы">
+          <Text>Цена закупки</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="ЗаголовокТаблицы">
+        <TextContent Style="ЗаголовокТаблицы">
+          <Text>Продано, единиц</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="ЗаголовокТаблицы">
+        <TextContent Style="ЗаголовокТаблицы">
+          <Text>Скорость, ед./день</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="ЗаголовокТаблицы">
+        <TextContent Style="ЗаголовокТаблицы">
+          <Text>Остаток</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="ЗаголовокТаблицы">
+        <TextContent Style="ЗаголовокТаблицы">
+          <Text>Требу-ется</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="ЗаголовокТаблицы">
+        <TextContent Style="ЗаголовокТаблицы">
+          <Text>Кол-во заказа</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="ЗаголовокТаблицы">
+        <TextContent Style="ЗаголовокТаблицы">
+          <Param Name="Header" Target="Text" />
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="4.7" AutoFitHeight="true">
+      <Cell Style="ЛинияВнизуСлеваВверху">
+        <DecimalContent Style="Целое">
+          <Param Name="НомСтр" Target="Value" Value="" Expression="НомерСтроки" />
+        </DecimalContent>
+      </Cell>
+      <Cell ColSpan="8" Style="ЛинияВверхуВнизу">
+        <CollectionContent>
+          <ActionContent Type="MouseDblClick">
+            <Param Name="Code" />
+            <Param Name="Type" />
+          </ActionContent>
+          <TextContent Style="Текст">
+            <Param Name="Наименование" Target="Text" Value="" />
+          </TextContent>
+        </CollectionContent>
+      </Cell>
+      <Cell Index="10" Style="ЛинияВверхуВнизу">
+        <DecimalContent Style="Целое">
+          <Param Name="Код" Target="Value" Value="" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуВнизу">
+        <TextContent Style="ТекстЦентр">
+          <Param Name="Единица измерения" Target="Text" Value="" />
+        </TextContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Процент">
+          <Param Name="Цена" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Процент">
+          <Param Name="Продано" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Процент">
+          <Param Name="Скорость" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Процент">
+          <Param Name="Остаток" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Процент">
+          <Param Name="Требуется" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Процент">
+          <Param Name="Количество" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <TextContent Style="Текст">
+          <Param Name="Value" Target="Text" />
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="4.5" />
+    <Row Height="2" AutoFitHeight="true">
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+    </Row>
+    <Row Height="4.5">
+      <Cell Index="1" Style="Стиль 1" />
+      <Cell Style="Стиль 1" />
+      <Cell Style="Стиль 1" />
+      <Cell Style="Стиль 1" />
+      <Cell Style="Стиль 1" />
+      <Cell Style="Стиль 1" />
+      <Cell />
+      <Cell Style="Стиль 1" />
+      <Cell Index="10" />
+      <Cell Style="Стиль 1">
+        <TextContent Style="ТекстСправа">
+          <Text>Всего:</Text>
+        </TextContent>
+      </Cell>
+      <Cell />
+      <Cell>
+        <DecimalContent Style="ПроцентЖирным">
+          <Param Name="ИтогПродано" Target="Value" Value="0" Expression="SumOfSales" />
+        </DecimalContent>
+      </Cell>
+      <Cell />
+      <Cell>
+        <DecimalContent Style="ПроцентЖирным">
+          <Param Name="ИтогОстаток" Target="Value" Value="0" Expression="SumOfRest" />
+        </DecimalContent>
+      </Cell>
+      <Cell>
+        <DecimalContent Style="ПроцентЖирным">
+          <Param Name="ИтогТребуется" Target="Value" Value="0" Expression="SumOfLack" />
+        </DecimalContent>
+      </Cell>
+      <Cell>
+        <DecimalContent Style="ПроцентЖирным">
+          <Param Name="ИтогКоличество" Target="Value" Value="0" Expression="SumOfQuantity" />
+        </DecimalContent>
+      </Cell>
+      <Cell />
+    </Row>
+    <Row Height="2" />
+  </Table>
+  <Styles>
+    <ExternalStyle Uri="file://DefaultStyles.xml" />
+    <TextContentStyle ID="Стиль 1" Color="Black" Direction="LeftToRight" Angle="0">
+      <Alignment Horizontal="Left" Vertical="Middle" />
+      <Font Family="Arial" Size="9.75" Style="Bold" />
+    </TextContentStyle>
+    <TextContentStyle ID="Сумма прописью" Color="Black" Direction="LeftToRight" Angle="0">
+      <Alignment Horizontal="Left" Vertical="Middle" />
+      <Font Family="Arial" Size="9.75" Style="Bold" />
+    </TextContentStyle>
+    <CellStyle ID="Стиль 1" />
+  </Styles>
+  <Expressions>
+    <CountExpression ID="НомерСтроки" Start="1" Increment="1" />
+    <SumExpression ID="SumOfSales" ParamName="Продано" />
+    <SumExpression ID="SumOfRest" ParamName="Остаток" />
+    <SumExpression ID="SumOfLack" ParamName="Требуется" />
+    <SumExpression ID="SumOfQuantity" ParamName="Количество" />
+    <NowExpression ID="CurrentDate" />
+    <NowExpression ID="Now" Freeze="true" />
+  </Expressions>
+</CellReportTemplate>

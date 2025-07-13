@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CellReportTemplate>
+  <Properties DefaultRowsCount="15" DefaultColumnsCount="15">
+    <DocumentName>Товарный чек</DocumentName>
+  </Properties>
+  <ExportSettings RunExcelAfterExport="true" />
+  <DisplaySettings FrozenColumns="0" FrozenRows="0" ShowGridLines="false" ShowDesignerGridLines="true" ShowCurrentRows="true" ShowBookMarks="false" ShowResizers="false" ShowDesignerResizers="true" Scale="1" />
+  <PrintSettings Landscape="false" Copies="1" AutoFitWidthPages="1" Scale="1">
+    <Margins Top="0" Left="0" Right="10" Bottom="0" />
+  </PrintSettings>
+  <Sections>
+    <Section ID="Header">
+      <LeftTop Row="0" Column="0" />
+      <RightBottom Row="4" Column="14" />
+    </Section>
+    <Section ID="TableRow">
+      <LeftTop Row="6" Column="0" />
+      <RightBottom Row="7" Column="14" />
+    </Section>
+    <Section ID="Footer">
+      <LeftTop Row="8" Column="0" />
+      <RightBottom Row="11" Column="14" />
+    </Section>
+    <Section ID="TableHeader" IsHeaderFixed="true">
+      <LeftTop Row="5" Column="0" />
+      <RightBottom Row="5" Column="14" />
+    </Section>
+    <Section ID="Discount">
+      <LeftTop Row="12" Column="0" />
+      <RightBottom Row="12" Column="14" />
+    </Section>
+  </Sections>
+  <BookMarks />
+  <Table RowsCount="14" ColumnsCount="15">
+    <Column Width="5" />
+    <Column Width="3" />
+    <Column Width="3" />
+    <Column Width="3" />
+    <Column Width="3" />
+    <Column Width="3" />
+    <Column Width="3" />
+    <Column Width="3" />
+    <Column Width="3" />
+    <Column Width="3" />
+    <Column Width="2" />
+    <Column Width="13" />
+    <Column Width="12" />
+    <Column Width="5" />
+    <Column Width="15" />
+    <Row Height="7">
+      <Cell ColSpan="14">
+        <TextContent Style="Заголовок80мм">
+          <Param Name="Номер" />
+          <Param Name="Дата" />
+          <Param Name="Тип чека" Assign="Тип чека" />
+          <Text>№ [Номер] от [Дата]</Text>
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="6.770829">
+      <Cell ColSpan="14">
+        <TextContent Style="Заголовок80мм">
+          <Param Name="Тип чека" Target="Text" />
+          <Param Name="Верт.Выравнивание" Target="Style.VAlignment" Value="Top" />
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="5">
+      <Cell ColSpan="14" Style="ЛинияВнизу">
+        <TextContent Style="Заголовок80мм">
+          <Param Target="Text" Value="Магазин" />
+          <Param Name="Шрифт.Стиль" Target="Style.Font.Style" Value="Regular" />
+          <Param Name="Шрифт.Размер" Target="Style.Font.Size" Value="8" />
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="1" />
+    <Row Height="1" />
+    <Row Height="2" AutoFitHeight="true">
+      <Cell Index="12">
+        <TextContent>
+          <Param Name="Шрифт.Размер" Target="Style.Font.Size" Value="8" />
+          <Param Name="Гор.Выравнивание" Target="Style.HAlignment" Value="Right" />
+        </TextContent>
+      </Cell>
+      <Cell ColSpan="1">
+        <TextContent>
+          <Param Name="Шрифт.Размер" Target="Style.Font.Size" Value="8" />
+          <Param Name="Гор.Выравнивание" Target="Style.HAlignment" Value="Right" />
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="5">
+      <Cell RowSpan="1">
+        <DecimalContent Style="ЧислоЦелое80мм">
+          <Param Name="НомСтр" Target="Value" Value="" Expression="НомерСтроки" />
+          <Param Name="Верт.Выравнивание" Target="Style.VAlignment" Value="Top" />
+        </DecimalContent>
+      </Cell>
+      <Cell RowSpan="1" ColSpan="10">
+        <TextContent Style="Строка80мм">
+          <Param Name="Товар.Наименование" Target="Text" Value="" />
+          <Param Name="Шрифт.Размер" Target="Style.Font.Size" Value="8" />
+          <Param Name="Товар.Артикул" />
+          <Param Name="Верт.Выравнивание" Target="Style.VAlignment" Value="Top" />
+          <Text>[Товар.Наименование] Арт. [Товар.Артикул]</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="12">
+        <DecimalContent Style="Число80мм_малое">
+          <Param Name="Количество" Target="Value" />
+          <Param Name="Верт.Выравнивание" Target="Style.VAlignment" Value="Top" />
+          <Param Name="Шрифт.Размер" Target="Style.Font.Size" Value="8" />
+        </DecimalContent>
+      </Cell>
+      <Cell ColSpan="1">
+        <TextContent>
+          <Param Name="Цена" Format="#,##0.00;-#,##0.00;''" />
+          <Param Name="Гор.Выравнивание" Target="Style.HAlignment" Value="Right" />
+          <Param Name="Шрифт.Размер" Target="Style.Font.Size" Value="8" />
+          <Param Name="Верт.Выравнивание" Target="Style.VAlignment" Value="Top" />
+          <Text>х [Цена]</Text>
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="5" AutoFitHeight="true">
+      <Cell Index="12" ColSpan="2">
+        <TextContent>
+          <Param Name="Сумма" Type="Decimal" Format="#,##0.00;-#,##0.00;''" />
+          <Param Name="Гор.Выравнивание" Target="Style.HAlignment" Value="Right" />
+          <Param Name="Верт.Выравнивание" Target="Style.VAlignment" Value="Top" />
+          <Param Name="Шрифт.Размер" Target="Style.Font.Size" Value="8" />
+          <Text>=[Сумма]</Text>
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="1" />
+    <Row Height="9">
+      <Cell Index="1" ColSpan="9" Style="Стиль 1">
+        <TextContent Style="Скидка">
+          <Param Name="Шрифт.Стиль" Target="Style.Font.Style" Value="Regular,Bold" />
+          <Param Name="Гор.Выравнивание" Target="Style.HAlignment" Value="Left" />
+          <Text>Всего:</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="11" ColSpan="3">
+        <DecimalContent Style="ДеньгиЖирным">
+          <Param Name="Сумма" Target="Value" />
+          <Param Name="Гор.Выравнивание" Target="Style.HAlignment" Value="Right" />
+        </DecimalContent>
+      </Cell>
+    </Row>
+    <Row Height="1" />
+    <Row Height="9">
+      <Cell ColSpan="14" Style="ЛинияВверху">
+        <TextContent Style="Заголовок80мм">
+          <Param Name="Гор.Выравнивание" Target="Style.HAlignment" Value="Center" />
+          <Param Name="Шрифт.Стиль" Target="Style.Font.Style" Value="Regular,Bold,Italic" />
+          <Text>Благодарим за покупку!</Text>
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="6" AutoFitHeight="true">
+      <Cell ColSpan="12" Style="Стиль 1">
+        <TextContent Style="Скидка">
+          <Param Name="Скидка" Target="Text" Value="Скидка:" />
+        </TextContent>
+      </Cell>
+      <Cell Index="13" ColSpan="1">
+        <DecimalContent Style="Число80мм_малое">
+          <Param Name="Сумма" Target="Value" />
+        </DecimalContent>
+      </Cell>
+    </Row>
+    <Row Height="4.5875" />
+  </Table>
+  <Styles>
+    <ExternalStyle Uri="file://DefaultStyles.xml" />
+    <TextContentStyle ID="Заголовок80мм" Color="Black" Direction="LeftToRight" Angle="0">
+      <Alignment Horizontal="Left" Vertical="Middle" />
+      <Font Family="Arial" Size="10" Style="Bold" />
+    </TextContentStyle>
+    <DecimalContentStyle ID="ЧислоЦелое80мм" Color="Black" Direction="LeftToRight" Angle="0" Format="0;-0;-" Culture="ru-RU" NegativeColor="#FF000000">
+      <Alignment Horizontal="Left" Vertical="Middle" />
+      <Font Family="Verdana" Size="8" Style="Regular" />
+    </DecimalContentStyle>
+    <DecimalContentStyle ID="Число80мм_малое" Color="Black" Direction="LeftToRight" Angle="0" Format="0.###;-0.###;-" Culture="ru-RU" NegativeColor="#FF000000">
+      <Alignment Horizontal="Right" Vertical="Middle" />
+      <Font Family="Verdana" Size="9" Style="Regular" />
+    </DecimalContentStyle>
+    <TextContentStyle ID="Строка80мм" Color="Black" Direction="LeftToRight" Angle="0">
+      <Alignment Horizontal="Left" Vertical="Middle" />
+      <Font Family="Verdana" Size="9" Style="Regular" />
+    </TextContentStyle>
+    <DecimalContentStyle ID="Число80мм" Color="Black" Direction="LeftToRight" Angle="0" Format="0.00;-0.00;-" Culture="ru-RU" NegativeColor="#FF000000">
+      <Alignment Horizontal="Right" Vertical="Middle" />
+      <Font Family="Verdana" Size="10" Style="Regular" />
+    </DecimalContentStyle>
+    <CellStyle ID="Стиль 1" />
+    <TextContentStyle ID="Скидка" Color="Black" Direction="LeftToRight" Angle="0">
+      <Alignment Horizontal="Right" Vertical="Middle" />
+      <Font Family="Verdana" Size="10" Style="Regular" />
+    </TextContentStyle>
+  </Styles>
+  <Expressions>
+    <CountExpression ID="НомерСтроки" Start="1" Increment="1" />
+    <NowExpression ID="Now" Freeze="true" />
+  </Expressions>
+</CellReportTemplate>

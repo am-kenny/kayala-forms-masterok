@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Objects xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://download.kayala-soft.ru/object.xsd">
+  <DictionaryObjectDescription Name="Товары" Format="{{Name}}{{#if VendorCode}} {{/if}}{{VendorCode}}">
+    <FieldDescription FieldName="Артикул" Description="" DBFieldName="VendorCode" Type="String" ForSelect="true" Length="128" ForSearch="true" SearchResultOrder="0" LocalName="#VendorCode/Articul" />
+  </DictionaryObjectDescription>
+</Objects>

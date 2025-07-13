@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CellReportTemplate>
+  <Properties DefaultRowsCount="5" DefaultColumnsCount="6" DefaultRowHeight="5" DefaultColumnWidth="5">
+    <DocumentName>Этикетки</DocumentName>
+  </Properties>
+  <ExportSettings RunExcelAfterExport="true" />
+  <DisplaySettings FrozenColumns="0" FrozenRows="0" ShowGridLines="false" ShowDesignerGridLines="true" ShowCurrentRows="true" ShowBookMarks="false" ShowResizers="false" ShowDesignerResizers="true" Scale="1" />
+  <PrintSettings Landscape="false" Copies="1" AutoFitWidthPages="1" Scale="1">
+    <Margins Top="0" Left="0" Right="0" Bottom="0" />
+  </PrintSettings>
+  <Sections>
+    <Section ID="Ценник">
+      <LeftTop Row="0" Column="0" />
+      <RightBottom Row="4" Column="7" />
+    </Section>
+    <Section ID="Пусто">
+      <LeftTop Row="5" Column="0" />
+      <RightBottom Row="5" Column="7" />
+    </Section>
+  </Sections>
+  <BookMarks />
+  <Table RowsCount="6" ColumnsCount="8">
+    <Column Width="6" />
+    <Column Index="3" Width="4" />
+    <Column Width="6" />
+    <Column Index="6" Width="8" />
+    <Column Width="3" />
+    <Row Height="3">
+      <Cell ColSpan="7">
+        <TextContent Style="Т10Ц">
+          <Param Name="Код" Value="" />
+          <Text>Код: [Код] Ед.: [Единица]</Text>
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="7">
+      <Cell RowSpan="1" ColSpan="7" Style="Стиль 1">
+        <TextContent Style="Т12Ц" AutoSizeFont="true">
+          <Param Name="Наименование" Value="" />
+          <Text>[Наименование]</Text>
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="7" Index="3">
+      <Cell ColSpan="7" Style="Стиль 1">
+        <BarCodeContent Type="Code39" Orientation="Horizontal">
+          <Param Name="Штрихкод" Target="Code" Value="2300000050639" />
+          <Param Name="ТипШК" Target="Type" Value="EAN13" />
+          <Code></Code>
+        </BarCodeContent>
+      </Cell>
+    </Row>
+    <Row Height="3">
+      <Cell Index="1" ColSpan="5" Style="Стиль 1">
+        <TextContent Style="Т7Ц">
+          <Param Name="Штрихкод" Target="Text" Value="2300000050639" />
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row>
+      <Cell Index="7">
+        <TextContent />
+      </Cell>
+    </Row>
+  </Table>
+  <Styles>
+    <ExternalStyle Uri="file://DefaultStyles.xml" />
+    <TextContentStyle ID="Т12Ц" Color="Black" Direction="LeftToRight" Angle="0">
+      <Alignment Horizontal="Center" Vertical="Middle" />
+      <Font Family="Arial" Size="12" Style="Regular" />
+    </TextContentStyle>
+    <TextContentStyle ID="Т6" Color="Black" Direction="LeftToRight" Angle="0">
+      <Alignment Horizontal="Center" Vertical="Middle" />
+      <Font Family="Arial" Size="6" Style="Regular" />
+    </TextContentStyle>
+    <CellStyle ID="Стиль 1" />
+    <TextContentStyle ID="Т7Ц" Color="Black" Direction="LeftToRight" Angle="0">
+      <Alignment Horizontal="Center" Vertical="Middle" />
+      <Font Family="Verdana" Size="7" Style="Regular" />
+    </TextContentStyle>
+    <TextContentStyle ID="Т10Ц" Color="Black" Direction="LeftToRight" Angle="0">
+      <Alignment Horizontal="Center" Vertical="Middle" />
+      <Font Family="Verdana" Size="10" Style="Regular" />
+    </TextContentStyle>
+    <TextContentStyle ID="Т10Ж" Color="Black" Direction="LeftToRight" Angle="0">
+      <Alignment Horizontal="Left" Vertical="Middle" />
+      <Font Family="Verdana" Size="10" Style="Bold" />
+    </TextContentStyle>
+  </Styles>
+  <Expressions>
+    <NowExpression ID="Now" Freeze="true" />
+  </Expressions>
+</CellReportTemplate>

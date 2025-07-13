@@ -1,0 +1,1331 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CellReportTemplate>
+  <Properties DefaultRowsCount="45" DefaultColumnsCount="18">
+    <DocumentName>Торг-12</DocumentName>
+  </Properties>
+  <ExportSettings RunExcelAfterExport="true" />
+  <DisplaySettings FrozenColumns="0" FrozenRows="19" ShowGridLines="false" ShowDesignerGridLines="true" ShowCurrentRows="true" ShowBookMarks="false" ShowResizers="false" ShowDesignerResizers="true" Scale="1" />
+  <PrintSettings Landscape="true" Copies="1" AutoFitWidthPages="1" Scale="1">
+    <Margins Top="10" Left="10" Right="10" Bottom="10" />
+  </PrintSettings>
+  <Sections>
+    <Section ID="ШапкаОбщая">
+      <LeftTop Row="0" Column="0" />
+      <RightBottom Row="14" Column="17" />
+    </Section>
+    <Section ID="ШапкаСтраницы">
+      <LeftTop Row="15" Column="0" />
+      <RightBottom Row="18" Column="16" />
+    </Section>
+    <Section ID="Товар">
+      <LeftTop Row="19" Column="0" />
+      <RightBottom Row="19" Column="16" />
+    </Section>
+    <Section ID="ИтогСтраницы">
+      <LeftTop Row="20" Column="0" />
+      <RightBottom Row="20" Column="16" />
+    </Section>
+    <Section ID="ИтогНакладной">
+      <LeftTop Row="21" Column="0" />
+      <RightBottom Row="21" Column="16" />
+    </Section>
+    <Section ID="ПодвалОбщий">
+      <LeftTop Row="24" Column="0" />
+      <RightBottom Row="40" Column="16" />
+    </Section>
+    <Section ID="Пустая секция">
+      <LeftTop Row="43" Column="0" />
+      <RightBottom Row="43" Column="16" />
+    </Section>
+    <Section ID="СкидкаОбщая">
+      <LeftTop Row="22" Column="0" />
+      <RightBottom Row="23" Column="16" />
+    </Section>
+  </Sections>
+  <BookMarks />
+  <Table RowsCount="45" ColumnsCount="18">
+    <Column Width="10.05417" />
+    <Column Width="25.4" />
+    <Column Width="24.34167" />
+    <Column Width="9.789583" />
+    <Column Width="17.99167" />
+    <Column Width="15.875" />
+    <Column Width="16" />
+    <Column Width="12" />
+    <Column Width="14.02292" />
+    <Column Width="11.64167" />
+    <Column Width="12.43542" />
+    <Column Width="15.875" />
+    <Column Width="18.78542" />
+    <Column Width="21.16667" />
+    <Column Width="14.55208" />
+    <Column Width="15.875" />
+    <Column Width="23.8125" />
+    <Column Width="0.2645833" />
+    <Row Height="2.645833">
+      <Cell ColSpan="16" Style="Стиль 1">
+        <TextContent Style="Стиль 1">
+          <Param Name="Унифицированная форма № ТОРГ-12 Утверждена" Target="Text" />
+          <Text>Унифицированная форма № ТОРГ-12 Утверждена</Text>
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="2.645833">
+      <Cell ColSpan="16" Style="Стиль 1">
+        <TextContent Style="Стиль 1">
+          <Param Name="постановлением Госкомстата Росии от 25.12.98 №132" Target="Text" />
+          <Text>постановлением Госкомстата Росии от 25.12.98 №132</Text>
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="3.175">
+      <Cell ColSpan="14" Style="Стиль 1" />
+      <Cell Index="15" Style="Стиль 2" />
+      <Cell Style="Стиль 3">
+        <TextContent Style="Стиль 2">
+          <Param Name="Код" Target="Text" />
+          <Text>Код</Text>
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="3.704167">
+      <Cell RowSpan="1" ColSpan="12" Style="Стиль 4">
+        <TextContent Style="Стиль 3">
+          <Param Name="Constants.Фирма" />
+          <Param Name="Constants.ИНН" />
+          <Param Name="Constants.КПП" />
+          <Param Name="Constants.Адрес" />
+          <Param Name="БанкСчет" />
+          <Param Name="+КПП" />
+          <Param Name="Constants.Телефон" />
+          <Text>[Constants.Фирма], ИНН [Constants.ИНН],[+КПП] [Constants.Адрес], тел.:[Constants.Телефон]</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="13" Style="Стиль 1" />
+      <Cell ColSpan="1" Style="Стиль 5">
+        <TextContent Style="Стиль 4">
+          <Text>Форма по ОКУД </Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="16" Style="Стиль 4">
+        <TextContent Style="Стиль 3">
+          <Text>       0330212</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 6" />
+    </Row>
+    <Row Height="3.704167">
+      <Cell Index="15" Style="Стиль 1">
+        <TextContent Style="Стиль 4">
+          <Text>по ОКПО </Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 7" />
+    </Row>
+    <Row Height="2.910417">
+      <Cell ColSpan="12" Style="Стиль 1">
+        <TextContent Style="Стиль 6">
+          <Text>грузоотправитель, адрес, номер телефона, банковские реквизиты</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="15" Style="Стиль 1" />
+      <Cell Style="Стиль 7" />
+    </Row>
+    <Row Height="3.175">
+      <Cell ColSpan="12" Style="Стиль 8">
+        <TextContent Style="Стиль 6">
+          <Text>структурное подразделение</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="13" ColSpan="2" Style="Стиль 1">
+        <TextContent Style="Стиль 4">
+          <Text>Вид деятельности по ОКДП </Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="16" Style="Стиль 7" />
+    </Row>
+    <Row Height="6.879167">
+      <Cell ColSpan="1" Style="Стиль 1">
+        <TextContent Style="Стиль 4">
+          <Text>Грузополучатель </Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="2" ColSpan="11" Style="Стиль 4">
+        <TextContent Style="Стиль 3">
+          <Param Name="Контрагент" />
+          <Param Name="Контрагент.ИНН" />
+          <Param Name="Контрагент.КПП" />
+          <Param Name="Контрагент.Адрес" />
+          <Param Name="КонтрБанкСчет" />
+          <Param Name="+КонтрКПП" />
+          <Param Name="Контрагент.Телефон" />
+          <Text>[Контрагент], ИНН [Контрагент.ИНН],[+КонтрКПП] [Контрагент.Адрес], тел.:[Контрагент.Телефон]</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="14" Style="Стиль 1" />
+      <Cell Style="Стиль 1">
+        <TextContent Style="Стиль 4">
+          <Text>по ОКПО </Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 7" />
+    </Row>
+    <Row Height="6.879167">
+      <Cell ColSpan="1" Style="Стиль 1">
+        <TextContent Style="Стиль 4">
+          <Text>Поставщик</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="2" ColSpan="11" Style="Стиль 4">
+        <TextContent Style="Стиль 3">
+          <Param Name="Constants.Фирма" />
+          <Param Name="Constants.ИНН" />
+          <Param Name="Constants.КПП" />
+          <Param Name="Constants.Юридический адрес" />
+          <Param Name="БанкСчет" />
+          <Param Name="+КПП" />
+          <Text>[Constants.Фирма], ИНН [Constants.ИНН],[+КПП] [Constants.Юридический адрес], тел.:[Constants.Телефон]</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="15" Style="Стиль 1">
+        <TextContent Style="Стиль 4">
+          <Text>по ОКПО </Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 7" />
+    </Row>
+    <Row Height="6.614583">
+      <Cell ColSpan="1" Style="Стиль 1">
+        <TextContent Style="Стиль 4">
+          <Text>Плательщик</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="2" ColSpan="11" Style="Стиль 4">
+        <TextContent Style="Стиль 3">
+          <Param Name="Контрагент" />
+          <Param Name="КонтрИНН" />
+          <Param Name="КонтрКПП" />
+          <Param Name="КонтрЮрАдрес" />
+          <Param Name="КонтрБанкСчет" />
+          <Param Name="+КонтрКПП" />
+          <Text>[Контрагент], ИНН [Контрагент.ИНН],[+КонтрКПП] [Контрагент.Юридический адрес], тел.:[Контрагент.Телефон]</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="14" Style="Стиль 1" />
+      <Cell Style="Стиль 1">
+        <TextContent Style="Стиль 4">
+          <Text>по ОКПО </Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 7" />
+    </Row>
+    <Row Height="5">
+      <Cell ColSpan="1" Style="Стиль 1">
+        <TextContent Style="Стиль 4">
+          <Text>Основание </Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="2" ColSpan="10" Style="Стиль 4">
+        <TextContent Style="Стиль 3">
+          <Param Name="Комментарий" Target="Text" />
+        </TextContent>
+      </Cell>
+      <Cell Index="13" Style="Стиль 1" />
+      <Cell Index="15" Style="Стиль 9">
+        <TextContent Style="Стиль 4">
+          <Param Name="номер " Target="Text" />
+          <Text>номер </Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 7" />
+    </Row>
+    <Row Height="3.439583">
+      <Cell Index="1" Style="Стиль 1" />
+      <Cell ColSpan="10" Style="Стиль 8">
+        <TextContent Style="Стиль 6">
+          <Param Name="договор, заказ-наряд" Target="Text" />
+          <Text>договор, заказ-наряд</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="13" Style="Стиль 1" />
+      <Cell Style="Стиль 1" />
+      <Cell Style="Стиль 9">
+        <TextContent Style="Стиль 4">
+          <Param Name="дата " Target="Text" />
+          <Text>дата </Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 7" />
+    </Row>
+    <Row Height="3.439583">
+      <Cell Index="2" Style="Стиль 1" />
+      <Cell Index="11" Style="Стиль 1" />
+      <Cell ColSpan="2" Style="Стиль 1">
+        <TextContent Style="Стиль 4">
+          <Param Name="Транспортная накладная " Target="Text" />
+          <Text>Транспортная накладная </Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="15" Style="Стиль 9">
+        <TextContent Style="Стиль 4">
+          <Param Name="номер " Target="Text" />
+          <Text>номер </Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 7" />
+    </Row>
+    <Row Height="3.439583">
+      <Cell Style="Стиль 1" />
+      <Cell Index="3" Style="Стиль 1" />
+      <Cell Style="Стиль 1" />
+      <Cell Index="6" ColSpan="1" Style="Стиль 9">
+        <TextContent Style="Стиль 7">
+          <Param Name="Номер документа" Target="Text" />
+          <Text>Номер документа</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="8" ColSpan="1" Style="Стиль 9">
+        <TextContent Style="Стиль 7">
+          <Param Name="Дата составления" Target="Text" />
+          <Text>Дата составления</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="15" Style="Стиль 9">
+        <TextContent Style="Стиль 4">
+          <Param Name="дата " Target="Text" />
+          <Text>дата </Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 7" />
+    </Row>
+    <Row Height="4.7625">
+      <Cell ColSpan="5" Style="Стиль 1">
+        <TextContent Style="Стиль 8">
+          <Param Name="ТОВАРНАЯ НАКЛАДНАЯ " Target="Text" />
+          <Text>ТОВАРНАЯ НАКЛАДНАЯ </Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="6" ColSpan="1" Style="Стиль 10">
+        <TextContent Style="Стиль 9">
+          <Param Name="Номер" Target="Text" Value="" />
+        </TextContent>
+      </Cell>
+      <Cell Index="8" ColSpan="1" Style="Стиль 11">
+        <TextContent Style="Стиль 9">
+          <Param Name="ДатаДок" Target="Text" Value="" />
+        </TextContent>
+      </Cell>
+      <Cell Index="11" Style="Стиль 1" />
+      <Cell Index="13" ColSpan="2" Style="Стиль 1">
+        <TextContent Style="Стиль 4">
+          <Param Name="Вид операции " Target="Text" />
+          <Text>Вид операции </Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="16" Style="Стиль 12" />
+    </Row>
+    <Row Height="3.96875">
+      <Cell Style="Стиль 1" />
+      <Cell Index="2" Style="Стиль 1" />
+      <Cell Index="11" ColSpan="5" Style="Стиль 1">
+        <TextContent Style="Стиль 4">
+          <Param Name="НомерСтраницы" Target="Text" />
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="4">
+      <Cell RowSpan="1" Style="Стиль 13">
+        <TextContent Style="Стиль 5">
+          <Param Name="Но- мер по по- рядку" Target="Text" />
+          <Text>Но- мер по по- рядку</Text>
+        </TextContent>
+      </Cell>
+      <Cell ColSpan="4" Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Param Name="Товар" Target="Text" />
+          <Text>Товар</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="6" ColSpan="1" Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Text>Ед. изм.</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="8" ColSpan="1" Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Param Name="Количество" Target="Text" />
+          <Text>Количество</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="10" RowSpan="1" Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Param Name="Масса брутто" Target="Text" />
+          <Text>Масса брутто</Text>
+        </TextContent>
+      </Cell>
+      <Cell RowSpan="1" Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Param Name="Количество (масса нетто)" Target="Text" />
+          <Text>Количество (масса нетто)</Text>
+        </TextContent>
+      </Cell>
+      <Cell RowSpan="1" Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Param Name="Цена, руб. коп." Target="Text" />
+          <Text>Цена, руб. коп.</Text>
+        </TextContent>
+      </Cell>
+      <Cell RowSpan="1" Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Param Name="Сумма без учета НДС, руб. коп." Target="Text" />
+          <Text>Сумма без учета НДС, руб. коп.</Text>
+        </TextContent>
+      </Cell>
+      <Cell ColSpan="1" Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Param Name="НДС" Target="Text" />
+          <Text>НДС</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="16" RowSpan="1" Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Param Name="Сумма с учетом НДС, руб. коп." Target="Text" />
+          <Text>Сумма с учетом НДС, руб. коп.</Text>
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="11.64167">
+      <Cell Index="1" ColSpan="3" Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Param Name="наименование, характеристика, сорт, артикул товара" Target="Text" />
+          <Text>наименование, характеристика, сорт, артикул товара</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="5" Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Param Name="код" Target="Text" />
+          <Text>код</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Param Name="наиме- нование" Target="Text" />
+          <Text>наиме- нование</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Param Name="код по ОКЕИ" Target="Text" />
+          <Text>код по ОКЕИ</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Param Name="в одном месте" Target="Text" />
+          <Text>в одном месте</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Param Name="мест, штук" Target="Text" />
+          <Text>мест, штук</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="14" Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Param Name="ставка, %" Target="Text" />
+          <Text>ставка, %</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Param Name="сумма, руб. коп." Target="Text" />
+          <Text>сумма, руб. коп.</Text>
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="4">
+      <Cell Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Text>1</Text>
+        </TextContent>
+      </Cell>
+      <Cell ColSpan="3" Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Text>2</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="5" Style="Стиль 14">
+        <TextContent Style="Стиль 5">
+          <Text>3</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Text>4</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 14">
+        <TextContent Style="Стиль 5">
+          <Text>5</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 14">
+        <TextContent Style="Стиль 5">
+          <Text>6</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 14">
+        <TextContent Style="Стиль 5">
+          <Text>7</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 14">
+        <TextContent Style="Стиль 5">
+          <Text>8</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 14">
+        <TextContent Style="Стиль 5">
+          <Text>9</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 14">
+        <TextContent Style="Стиль 5">
+          <Text>10</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 14">
+        <TextContent Style="Стиль 5">
+          <Text>11</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Text>12</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Text>13</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Text>14</Text>
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="4">
+      <Cell Style="Стиль 9">
+        <DecimalContent Style="Стиль 1">
+          <Param Name="НомСтр" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell ColSpan="3" Style="Стиль 9">
+        <TextContent Style="Стиль 3">
+          <Param Name="Наим" Target="Text" Value="Наим" />
+        </TextContent>
+      </Cell>
+      <Cell Index="5" Style="Стиль 7">
+        <DecimalContent Style="Стиль 1">
+          <Param Name="КодТовара" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="Стиль 7">
+        <TextContent Style="Стиль 3">
+          <Param Name="Единица" Target="Text" Value="Единица" />
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 15">
+        <DecimalContent Style="Стиль 1" />
+      </Cell>
+      <Cell Style="Стиль 9" />
+      <Cell Style="Стиль 9" />
+      <Cell Style="Стиль 9" />
+      <Cell Style="Стиль 9">
+        <DecimalContent Style="Стиль 2">
+          <Param Name="Количество" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="Стиль 9">
+        <DecimalContent Style="Стиль 3">
+          <Param Name="Цена" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="Стиль 16">
+        <DecimalContent Style="Стиль 3">
+          <Param Name="СуммаБезНДС" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Text>Без НДС</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 9">
+        <DecimalContent Style="Стиль 3">
+          <Param Name="СуммаНДС" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="Стиль 9">
+        <DecimalContent Style="Стиль 3">
+          <Param Name="СуммаСНДС" Target="Value" />
+        </DecimalContent>
+      </Cell>
+    </Row>
+    <Row Height="3.96875">
+      <Cell Style="Стиль 1" />
+      <Cell Index="4" />
+      <Cell Style="Стиль 17" />
+      <Cell Style="Стиль 1" />
+      <Cell Style="Стиль 17" />
+      <Cell Style="Стиль 17">
+        <TextContent Style="Стиль 4">
+          <Param Name="Итого:" Target="Text" />
+          <Text>Итого:</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 18" />
+      <Cell Style="Стиль 18" />
+      <Cell Style="Стиль 18">
+        <DecimalContent Style="Стиль 2">
+          <Param Name="ИтогоКоличествоНаСтранице" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="Стиль 18">
+        <TextContent Style="Стиль 5">
+          <Param Name="Х" Target="Text" />
+          <Text>Х</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 18">
+        <DecimalContent Style="Стиль 3">
+          <Param Name="ИтогоСуммаБезНДСНаСтранице" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Param Name="Х" Target="Text" />
+          <Text>Х</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 9">
+        <DecimalContent Style="Стиль 3">
+          <Param Name="ИтогоНДСНаСтранице" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="Стиль 9">
+        <DecimalContent Style="Стиль 3">
+          <Param Name="ИтогоСНДСНаСтранице" Target="Value" />
+        </DecimalContent>
+      </Cell>
+    </Row>
+    <Row Height="3.96875">
+      <Cell Style="Стиль 1" />
+      <Cell Index="6" ColSpan="2" Style="Стиль 1">
+        <TextContent Style="Стиль 4">
+          <Param Name="Всего по накладной: " Target="Text" />
+          <Text>Всего по накладной: </Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="9" Style="Стиль 9" />
+      <Cell Style="Стиль 9" />
+      <Cell Style="Стиль 9">
+        <DecimalContent Style="Стиль 2">
+          <Param Name="ИтогоКоличество" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Param Name="Х" Target="Text" />
+          <Text>Х</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 9">
+        <DecimalContent Style="Стиль 3">
+          <Param Name="ИтогоСуммаБезНДС" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Param Name="Х" Target="Text" />
+          <Text>Х</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 9">
+        <DecimalContent Style="Стиль 3">
+          <Param Name="ИтогоНДС" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="Стиль 9">
+        <DecimalContent Style="Стиль 3">
+          <Param Name="ИтогоСуммаСНДС" Target="Value" />
+        </DecimalContent>
+      </Cell>
+    </Row>
+    <Row Height="3.96875">
+      <Cell Style="Стиль 1" />
+      <Cell Style="Стиль 1" />
+      <Cell Index="6" ColSpan="2" Style="Стиль 1">
+        <TextContent Style="Стиль 4">
+          <Param Name="СкидкаТекст" Target="Text" />
+          <Text>СкидкаТекст</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="9" Style="Стиль 9" />
+      <Cell Style="Стиль 9" />
+      <Cell Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Param Name="Х" Target="Text" />
+          <Text>Х</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Param Name="Х" Target="Text" />
+          <Text>Х</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 9">
+        <DecimalContent Style="Стиль 3">
+          <Param Name="СкидкаБезНДС" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Param Name="Х" Target="Text" />
+          <Text>Х</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 9">
+        <DecimalContent Style="Стиль 3">
+          <Param Name="СкидкаНДС" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="Стиль 9">
+        <DecimalContent Style="Стиль 3">
+          <Param Name="СкидкаСНДС" Target="Value" />
+        </DecimalContent>
+      </Cell>
+    </Row>
+    <Row Height="3.96875">
+      <Cell Index="5" ColSpan="3" Style="Стиль 1">
+        <TextContent Style="Стиль 4">
+          <Param Name="Всего с учетом скидки:" Target="Text" />
+          <Text>Всего с учетом скидки:</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="9" Style="Стиль 9" />
+      <Cell Style="Стиль 9" />
+      <Cell Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Param Name="Х" Target="Text" />
+          <Text>Х</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Param Name="Х" Target="Text" />
+          <Text>Х</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 9">
+        <DecimalContent Style="Стиль 3">
+          <Param Name="СуммаБезНДССоСкидкой" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="Стиль 9">
+        <TextContent Style="Стиль 5">
+          <Param Name="Х" Target="Text" />
+          <Text>Х</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 9">
+        <DecimalContent Style="Стиль 3">
+          <Param Name="ИтогоНДССоСкидкой" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="Стиль 9">
+        <DecimalContent Style="Стиль 3">
+          <Param Name="СуммаСНДССоСкидкой" Target="Value" />
+        </DecimalContent>
+      </Cell>
+    </Row>
+    <Row Height="3.96875">
+      <Cell Style="Стиль 1" />
+      <Cell Index="2" ColSpan="6" Style="Стиль 1">
+        <TextContent Style="Стиль 10">
+          <Param Name="ИнфоНакладной1" Target="Text" />
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="3.96875">
+      <Cell Index="2" Style="Стиль 1">
+        <TextContent Style="Стиль 10">
+          <Param Name="и содержит" Target="Text" />
+          <Text>и содержит</Text>
+        </TextContent>
+      </Cell>
+      <Cell ColSpan="5" Style="Стиль 4">
+        <TextContent Style="Стиль 3">
+          <Param Name="КоличествоСтрокПрописью" Target="Text" />
+        </TextContent>
+      </Cell>
+      <Cell Index="9" ColSpan="3" Style="Стиль 1">
+        <TextContent Style="Стиль 10">
+          <Param Name="порядковых номеров записей" Target="Text" />
+          <Text>порядковых номеров записей</Text>
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="3.96875">
+      <Cell Index="3" ColSpan="5" Style="Стиль 1">
+        <TextContent Style="Стиль 6">
+          <Param Name="прописью" Target="Text" />
+          <Text>прописью</Text>
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="3.96875">
+      <Cell Index="6" ColSpan="2" Style="Стиль 1">
+        <TextContent Style="Стиль 3">
+          <Param Name="Масса груза (нетто) " Target="Text" />
+          <Text>Масса груза (нетто) </Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="16" Style="Стиль 19" />
+    </Row>
+    <Row Height="3.96875">
+      <Cell Index="2" Style="Стиль 1">
+        <TextContent Style="Стиль 10">
+          <Param Name="Всего мест" Target="Text" />
+          <Text>Всего мест</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="6" ColSpan="2" Style="Стиль 1">
+        <TextContent Style="Стиль 3">
+          <Param Name="Масса груза (брутто)" Target="Text" />
+          <Text>Масса груза (брутто)</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="9" ColSpan="6" Style="Стиль 8">
+        <TextContent Style="Стиль 6">
+          <Param Name="прописью" Target="Text" />
+          <Text>прописью</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="16" Style="Стиль 19" />
+    </Row>
+    <Row Height="3.96875">
+      <Cell Index="3" ColSpan="2" Style="Стиль 8">
+        <TextContent Style="Стиль 6">
+          <Param Name="прописью" Target="Text" />
+          <Text>прописью</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="9" ColSpan="6" Style="Стиль 8">
+        <TextContent Style="Стиль 6">
+          <Param Name="прописью" Target="Text" />
+          <Text>прописью</Text>
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="3.96875">
+      <Cell ColSpan="3" Style="Стиль 1">
+        <TextContent Style="Стиль 10">
+          <Text>Приложение (паспорта, сертификаты и т.п.) на </Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="5" Style="Стиль 1" />
+      <Cell Style="Стиль 1">
+        <TextContent Style="Стиль 10">
+          <Param Name="листах" Target="Text" />
+          <Text>листах</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="8" Style="Стиль 1" />
+      <Cell Style="Стиль 20" />
+    </Row>
+    <Row Height="4">
+      <Cell Index="4" ColSpan="1" Style="Стиль 8">
+        <TextContent Style="Стиль 6">
+          <Param Name="прописью" Target="Text" />
+          <Text>прописью</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="9" Style="Стиль 20" />
+      <Cell ColSpan="1" Style="Стиль 1">
+        <TextContent Style="Стиль 3">
+          <Text>По доверенности № </Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="13" Style="Стиль 1">
+        <TextContent Style="Стиль 10">
+          <Text>от</Text>
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="4">
+      <Cell ColSpan="7" Style="Стиль 1">
+        <TextContent Style="Стиль 10">
+          <Param Name="ВсегоНаименований" Target="Text" />
+        </TextContent>
+      </Cell>
+      <Cell Index="9" Style="Стиль 20" />
+      <Cell ColSpan="1" Style="Стиль 1">
+        <TextContent Style="Стиль 3">
+          <Text>выданной</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="15" Style="Стиль 1" />
+    </Row>
+    <Row Height="6">
+      <Cell ColSpan="8" Style="Стиль 1">
+        <TextContent Style="Стиль 10">
+          <Param Name="НаСумму" Target="Text" Value="Сумма прописью" Format="currencyString|RUR" />
+          <Text>на сумму [НаСумму]</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="9" Style="Стиль 20" />
+      <Cell Index="11" Style="Стиль 1" />
+      <Cell ColSpan="4" Style="Стиль 8">
+        <TextContent Style="Стиль 6">
+          <Text>кем, кому (организация, должность, фамилия, и.о.)</Text>
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="6">
+      <Cell ColSpan="1" Style="Стиль 1">
+        <TextContent Style="Стиль 3">
+          <Param Name="Отпуск разрешил" Target="Text" />
+          <Text>Отпуск разрешил</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="2" ColSpan="1">
+        <TextContent Style="Стиль 3">
+          <Param Target="Text" />
+          <Param Name="Новый" />
+          <Text>           ИП</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="6" ColSpan="1" Style="Стиль 1">
+        <TextContent Style="Стиль 3">
+          <Param Target="Text" />
+          <Param Name="Новый" />
+          <Param Name="Гор.Выравнивание" Target="Style.HAlignment" Value="Center" />
+          <Text>Приходько Н. Л.</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="9" Style="Стиль 20" />
+    </Row>
+    <Row Height="3">
+      <Cell Style="Стиль 1" />
+      <Cell Index="2" Style="Стиль 8">
+        <TextContent Style="Стиль 6">
+          <Param Name="должность" Target="Text" />
+          <Text>должность</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="4" Style="Стиль 8">
+        <TextContent Style="Стиль 6">
+          <Param Name="подпись" Target="Text" />
+          <Text>подпись</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="6" ColSpan="1" Style="Стиль 8">
+        <TextContent Style="Стиль 6">
+          <Param Name="расшифровка подписи" Target="Text" />
+          <Text>расшифровка подписи</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="9" Style="Стиль 20" />
+      <Cell Index="11" ColSpan="5" Style="Стиль 8" />
+    </Row>
+    <Row Height="6">
+      <Cell ColSpan="2" Style="Стиль 1">
+        <TextContent Style="Стиль 3">
+          <Param Name="Главный (старший) бухгалтер" Target="Text" />
+          <Text>Главный (старший) бухгалтер</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="6" ColSpan="2" Style="Стиль 1" />
+      <Cell Index="9" Style="Стиль 20" />
+      <Cell ColSpan="1" Style="Стиль 1">
+        <TextContent Style="Стиль 3">
+          <Param Name="Груз принял" Target="Text" />
+          <Text>Груз принял</Text>
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="3">
+      <Cell Style="Стиль 1" />
+      <Cell Index="4" Style="Стиль 8">
+        <TextContent Style="Стиль 6">
+          <Param Name="подпись" Target="Text" />
+          <Text>подпись</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="6" ColSpan="1" Style="Стиль 8">
+        <TextContent Style="Стиль 6">
+          <Param Name="расшифровка подписи" Target="Text" />
+          <Text>расшифровка подписи</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="9" Style="Стиль 20" />
+      <Cell Index="11" Style="Стиль 1" />
+      <Cell Style="Стиль 8">
+        <TextContent Style="Стиль 6">
+          <Param Name="должность" Target="Text" />
+          <Text>должность</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="14" Style="Стиль 8">
+        <TextContent Style="Стиль 6">
+          <Param Name="подпись" Target="Text" />
+          <Text>подпись</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="16" Style="Стиль 8">
+        <TextContent Style="Стиль 6">
+          <Param Name="расшифровка подписи" Target="Text" />
+          <Text>расшифровка подписи</Text>
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="4">
+      <Cell ColSpan="1" Style="Стиль 1">
+        <TextContent Style="Стиль 10">
+          <Param Name="Отпуск груза произвел" Target="Text" />
+          <Text>Отпуск груза произвел</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="2" ColSpan="1">
+        <TextContent Style="Стиль 3">
+          <Param Target="Text" />
+          <Param Name="Новый" />
+          <Text>           ИП</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="6" ColSpan="1" Style="Стиль 1">
+        <TextContent Style="Стиль 3">
+          <Param Target="Text" />
+          <Param Name="Новый" />
+          <Param Name="Гор.Выравнивание" Target="Style.HAlignment" Value="Center" />
+          <Text>Приходько Н. Л.</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="9" Style="Стиль 20" />
+      <Cell ColSpan="1" Style="Стиль 1">
+        <TextContent Style="Стиль 10">
+          <Param Name="Груз получил" Target="Text" />
+          <Text>Груз получил</Text>
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="5.55625">
+      <Cell Style="Стиль 1" />
+      <Cell Index="2" Style="Стиль 8">
+        <TextContent Style="Стиль 6">
+          <Param Name="должность" Target="Text" />
+          <Text>должность</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="4" Style="Стиль 8">
+        <TextContent Style="Стиль 6">
+          <Param Name="подпись" Target="Text" />
+          <Text>подпись</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="6" ColSpan="1" Style="Стиль 8">
+        <TextContent Style="Стиль 6">
+          <Param Name="расшифровка подписи" Target="Text" />
+          <Text>расшифровка подписи</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="9" Style="Стиль 20" />
+      <Cell ColSpan="1" Style="Стиль 1">
+        <TextContent Style="Стиль 10">
+          <Param Name="грузополучатель" Target="Text" />
+          <Text>грузополучатель</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="12" Style="Стиль 8">
+        <TextContent Style="Стиль 6">
+          <Param Name="должность" Target="Text" />
+          <Text>должность</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="14" Style="Стиль 8">
+        <TextContent Style="Стиль 6">
+          <Param Name="подпись" Target="Text" />
+          <Text>подпись</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="16" Style="Стиль 8">
+        <TextContent Style="Стиль 6">
+          <Param Name="расшифровка подписи" Target="Text" />
+          <Text>расшифровка подписи</Text>
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="4">
+      <Cell Index="1" Style="Стиль 1">
+        <TextContent Style="Стиль 5">
+          <Param Name="М.П." Target="Text" />
+          <Text>М.П.</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="4" ColSpan="3" Style="Стиль 1">
+        <TextContent Style="Стиль 3">
+          <Param Name="&quot;        &quot; _____________ 20       года" Target="Text" Value="" />
+          <Text>"        " _____________ 20       года</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="9" Style="Стиль 20" />
+      <Cell Index="11" Style="Стиль 1">
+        <TextContent Style="Стиль 5">
+          <Param Name="М.П." Target="Text" />
+          <Text>М.П.</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="Стиль 1" />
+      <Cell ColSpan="3" Style="Стиль 1">
+        <TextContent Style="Стиль 3">
+          <Param Name="&quot;        &quot; _____________ 20       года" Target="Text" />
+          <Text>"        " _____________ 20       года</Text>
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="4">
+      <Cell ColSpan="3" Style="Стиль 1" />
+      <Cell Index="4" ColSpan="5" Style="Стиль 1" />
+    </Row>
+    <Row Height="3.96875">
+      <Cell Index="4" Style="Стиль 1" />
+      <Cell Index="8" Style="Стиль 1" />
+    </Row>
+    <Row Height="3.96875">
+      <Cell Style="Стиль 1" />
+      <Cell Index="9" Style="Стиль 1" />
+    </Row>
+    <Row Height="3.96875" />
+  </Table>
+  <Styles>
+    <ExternalStyle Uri="file://DefaultStyles.xml" />
+    <TextContentStyle ID="Стиль 1" Color="Black" Direction="LeftToRight" Angle="0">
+      <Alignment Horizontal="Right" Vertical="Bottom" />
+      <Font Family="Microsoft Sans Serif" Size="6.75" Style="Regular" />
+    </TextContentStyle>
+    <CellStyle ID="Стиль 2">
+      <Borders>
+        <Border Position="Top" Style="None" Color="Transparent" Weight="0" />
+        <Border Position="Left" Style="None" Color="Transparent" Weight="0" />
+        <Border Position="Right" Style="Solid" Color="Black" Weight="0.2645833" />
+        <Border Position="Bottom" Style="None" Color="Transparent" Weight="0" />
+      </Borders>
+    </CellStyle>
+    <CellStyle ID="Стиль 3">
+      <Borders>
+        <Border Position="Top" Style="Solid" Color="Black" Weight="0.2645833" />
+        <Border Position="Left" Style="None" Color="Transparent" Weight="0" />
+        <Border Position="Right" Style="Solid" Color="Black" Weight="0.2645833" />
+        <Border Position="Bottom" Style="Solid" Color="Black" Weight="0.5291666" />
+      </Borders>
+    </CellStyle>
+    <TextContentStyle ID="Стиль 2" Color="Black" Direction="LeftToRight" Angle="0">
+      <Alignment Horizontal="Center" Vertical="Bottom" />
+      <Font Family="Microsoft Sans Serif" Size="8.25" Style="Regular" />
+    </TextContentStyle>
+    <CellStyle ID="Стиль 4">
+      <Borders>
+        <Border Position="Top" Style="None" Color="Transparent" Weight="0" />
+        <Border Position="Left" Style="None" Color="Transparent" Weight="0" />
+        <Border Position="Right" Style="None" Color="Transparent" Weight="0" />
+        <Border Position="Bottom" Style="Solid" Color="Black" Weight="0.2645833" />
+      </Borders>
+    </CellStyle>
+    <CellStyle ID="Стиль 6">
+      <Borders>
+        <Border Position="Top" Style="None" Color="Transparent" Weight="0" />
+        <Border Position="Left" Style="Solid" Color="Black" Weight="0.5291666" />
+        <Border Position="Right" Style="None" Color="Transparent" Weight="0" />
+        <Border Position="Bottom" Style="None" Color="Transparent" Weight="0" />
+      </Borders>
+    </CellStyle>
+    <TextContentStyle ID="Стиль 7" Color="Black" Direction="LeftToRight" Angle="0">
+      <Alignment Horizontal="Center" Vertical="Middle" />
+      <Font Family="Microsoft Sans Serif" Size="6" Style="Regular" />
+    </TextContentStyle>
+    <TextContentStyle ID="Стиль 8" Color="Black" Direction="LeftToRight" Angle="0">
+      <Alignment Horizontal="Right" Vertical="Middle" />
+      <Font Family="Microsoft Sans Serif" Size="9.75" Style="Bold" />
+    </TextContentStyle>
+    <CellStyle ID="Стиль 10">
+      <Borders>
+        <Border Position="Top" Style="Solid" Color="Black" Weight="0.5291666" />
+        <Border Position="Left" Style="Solid" Color="Black" Weight="0.5291666" />
+        <Border Position="Right" Style="Solid" Color="Black" Weight="0.2645833" />
+        <Border Position="Bottom" Style="Solid" Color="Black" Weight="0.5291666" />
+      </Borders>
+    </CellStyle>
+    <TextContentStyle ID="Стиль 9" Color="Black" Direction="LeftToRight" Angle="0">
+      <Alignment Horizontal="Center" Vertical="Middle" />
+      <Font Family="Microsoft Sans Serif" Size="9.75" Style="Bold" />
+    </TextContentStyle>
+    <CellStyle ID="Стиль 11">
+      <Borders>
+        <Border Position="Top" Style="Solid" Color="Black" Weight="0.5291666" />
+        <Border Position="Left" Style="Solid" Color="Black" Weight="0.2645833" />
+        <Border Position="Right" Style="Solid" Color="Black" Weight="0.5291666" />
+        <Border Position="Bottom" Style="Solid" Color="Black" Weight="0.5291666" />
+      </Borders>
+    </CellStyle>
+    <CellStyle ID="Стиль 12">
+      <Borders>
+        <Border Position="Top" Style="Solid" Color="Black" Weight="0.2645833" />
+        <Border Position="Left" Style="Solid" Color="Black" Weight="0.5291666" />
+        <Border Position="Right" Style="Solid" Color="Black" Weight="0.5291666" />
+        <Border Position="Bottom" Style="Solid" Color="Black" Weight="0.5291666" />
+      </Borders>
+    </CellStyle>
+    <CellStyle ID="Стиль 13">
+      <Borders>
+        <Border Position="Top" Style="Solid" Color="Black" Weight="0.2645833" />
+        <Border Position="Left" Style="Solid" Color="Black" Weight="0.2645833" />
+        <Border Position="Right" Style="None" Color="Transparent" Weight="0" />
+        <Border Position="Bottom" Style="Solid" Color="Black" Weight="0.2645833" />
+      </Borders>
+    </CellStyle>
+    <DecimalContentStyle ID="Стиль 2" Color="Black" Direction="LeftToRight" Angle="0" Format="#,##0.000;-#,##0.000;-" Culture="ru-RU" NegativeColor="Red">
+      <Alignment Horizontal="Right" Vertical="Middle" />
+      <Font Family="Microsoft Sans Serif" Size="8.25" Style="Regular" />
+    </DecimalContentStyle>
+    <DecimalContentStyle ID="Стиль 3" Color="Black" Direction="LeftToRight" Angle="0" Format="#,##0.00;-#,##0.00;-" Culture="ru-RU" NegativeColor="Red">
+      <Alignment Horizontal="Right" Vertical="Middle" />
+      <Font Family="Microsoft Sans Serif" Size="8.25" Style="Regular" />
+    </DecimalContentStyle>
+    <CellStyle ID="Стиль 16">
+      <Borders>
+        <Border Position="Top" Style="Solid" Color="Black" Weight="0.2645833" />
+        <Border Position="Left" Style="Solid" Color="Black" Weight="0.2645833" />
+        <Border Position="Right" Style="Solid" Color="Black" Weight="0.5291666" />
+        <Border Position="Bottom" Style="Solid" Color="Black" Weight="0.2645833" />
+      </Borders>
+    </CellStyle>
+    <CellStyle ID="Стиль 18">
+      <Borders>
+        <Border Position="Top" Style="Solid" Color="Black" Weight="0.5291666" />
+        <Border Position="Left" Style="Solid" Color="Black" Weight="0.2645833" />
+        <Border Position="Right" Style="Solid" Color="Black" Weight="0.2645833" />
+        <Border Position="Bottom" Style="Solid" Color="Black" Weight="0.2645833" />
+      </Borders>
+    </CellStyle>
+    <CellStyle ID="Стиль 19">
+      <Borders>
+        <Border Position="All" Style="Solid" Color="Black" Weight="0.5291666" />
+      </Borders>
+    </CellStyle>
+    <CellStyle ID="Стиль 20">
+      <Borders>
+        <Border Position="Top" Style="None" Color="Transparent" Weight="0" />
+        <Border Position="Left" Style="Solid" Color="Black" Weight="0.2645833" />
+        <Border Position="Right" Style="None" Color="Transparent" Weight="0" />
+        <Border Position="Bottom" Style="None" Color="Transparent" Weight="0" />
+      </Borders>
+    </CellStyle>
+    <CellStyle ID="Стиль 5">
+      <Borders>
+        <Border Position="Top" Style="None" Color="Transparent" Weight="0" />
+        <Border Position="Left" Style="None" Color="Transparent" Weight="0" />
+        <Border Position="Right" Style="Solid" Color="Black" Weight="0.5291666" />
+        <Border Position="Bottom" Style="None" Color="Transparent" Weight="0" />
+      </Borders>
+    </CellStyle>
+    <TextContentStyle ID="Стиль 4" Color="Black" Direction="LeftToRight" Angle="0">
+      <Alignment Horizontal="Right" Vertical="Middle" />
+      <Font Family="Microsoft Sans Serif" Size="8.25" Style="Regular" />
+    </TextContentStyle>
+    <TextContentStyle ID="Стиль 11" Color="Black" Direction="LeftToRight" Angle="0">
+      <Alignment Horizontal="Right" Vertical="Bottom" />
+      <Font Family="Microsoft Sans Serif" Size="8.25" Style="Regular" />
+    </TextContentStyle>
+    <TextContentStyle ID="Стиль 12" Color="Black" Direction="LeftToRight" Angle="0">
+      <Alignment Horizontal="Right" Vertical="Bottom" />
+      <Font Family="Microsoft Sans Serif" Size="9.75" Style="Bold" />
+    </TextContentStyle>
+    <TextContentStyle ID="Стиль 13" Color="Black" Direction="LeftToRight" Angle="0">
+      <Alignment Horizontal="Left" Vertical="Middle" />
+      <Font Family="Microsoft Sans Serif" Size="9.75" Style="Bold" />
+    </TextContentStyle>
+    <CellStyle ID="Стиль 15">
+      <Borders>
+        <Border Position="Top" Style="Solid" Color="Black" Weight="0.2645833" />
+        <Border Position="Left" Style="Solid" Color="Black" Weight="0.5291666" />
+        <Border Position="Right" Style="Solid" Color="Black" Weight="0.2645833" />
+        <Border Position="Bottom" Style="Solid" Color="Black" Weight="0.2645833" />
+      </Borders>
+    </CellStyle>
+    <CellStyle ID="Стиль 7">
+      <Borders>
+        <Border Position="Top" Style="Solid" Color="Black" Weight="0.2645833" />
+        <Border Position="Left" Style="Solid" Color="Black" Weight="0.5291666" />
+        <Border Position="Right" Style="Solid" Color="Black" Weight="0.5291666" />
+        <Border Position="Bottom" Style="Solid" Color="Black" Weight="0.2645833" />
+      </Borders>
+    </CellStyle>
+    <DecimalContentStyle ID="Стиль 1" Color="Black" Direction="LeftToRight" Angle="0" Format="#,##0;-#,##0;-" Culture="ru-RU" NegativeColor="Red">
+      <Alignment Horizontal="Right" Vertical="Middle" />
+      <Font Family="Microsoft Sans Serif" Size="8.25" Style="Regular" />
+    </DecimalContentStyle>
+    <CellStyle ID="Стиль 14">
+      <Borders>
+        <Border Position="Top" Style="Solid" Color="Black" Weight="0.2645833" />
+        <Border Position="Left" Style="Solid" Color="Black" Weight="0.2645833" />
+        <Border Position="Right" Style="Solid" Color="Black" Weight="0.2645833" />
+        <Border Position="Bottom" Style="Solid" Color="Black" Weight="0.5291666" />
+      </Borders>
+    </CellStyle>
+    <CellStyle ID="Стиль 17">
+      <Borders>
+        <Border Position="Top" Style="Solid" Color="Black" Weight="0.5291666" />
+        <Border Position="Left" Style="None" Color="Transparent" Weight="0" />
+        <Border Position="Right" Style="None" Color="Transparent" Weight="0" />
+        <Border Position="Bottom" Style="None" Color="Transparent" Weight="0" />
+      </Borders>
+    </CellStyle>
+    <CellStyle ID="Стиль 9">
+      <Borders>
+        <Border Position="All" Style="Solid" Color="Black" Weight="0.2645833" />
+      </Borders>
+    </CellStyle>
+    <TextContentStyle ID="Стиль 5" Color="Black" Direction="LeftToRight" Angle="0">
+      <Alignment Horizontal="Center" Vertical="Middle" />
+      <Font Family="Microsoft Sans Serif" Size="8.25" Style="Regular" />
+    </TextContentStyle>
+    <CellStyle ID="Стиль 8">
+      <Borders>
+        <Border Position="Top" Style="Solid" Color="Black" Weight="0.2645833" />
+        <Border Position="Left" Style="None" Color="Transparent" Weight="0" />
+        <Border Position="Right" Style="None" Color="Transparent" Weight="0" />
+        <Border Position="Bottom" Style="None" Color="Transparent" Weight="0" />
+      </Borders>
+    </CellStyle>
+    <TextContentStyle ID="Стиль 6" Color="Black" Direction="LeftToRight" Angle="0">
+      <Alignment Horizontal="Center" Vertical="Top" />
+      <Font Family="Microsoft Sans Serif" Size="6" Style="Regular" />
+    </TextContentStyle>
+    <TextContentStyle ID="Стиль 10" Color="Black" Direction="LeftToRight" Angle="0">
+      <Alignment Horizontal="Left" Vertical="Top" />
+      <Font Family="Microsoft Sans Serif" Size="8.25" Style="Regular" />
+    </TextContentStyle>
+    <CellStyle ID="Стиль 1" />
+    <TextContentStyle ID="Стиль 3" Color="Black" Direction="LeftToRight" Angle="0">
+      <Alignment Horizontal="Left" Vertical="Middle" />
+      <Font Family="Microsoft Sans Serif" Size="8.25" Style="Regular" />
+    </TextContentStyle>
+  </Styles>
+  <Expressions>
+    <NowExpression ID="Now" Freeze="true" />
+  </Expressions>
+</CellReportTemplate>

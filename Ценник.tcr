@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CellReportTemplate>
+  <Properties DefaultRowHeight="4" DefaultColumnWidth="5">
+    <DocumentName>Ценники</DocumentName>
+  </Properties>
+  <ExportSettings RunExcelAfterExport="true" />
+  <DisplaySettings FrozenColumns="0" FrozenRows="0" ShowGridLines="false" ShowDesignerGridLines="true" ShowCurrentRows="true" ShowBookMarks="false" ShowResizers="false" ShowDesignerResizers="true" Scale="1" />
+  <PrintSettings Landscape="false" Copies="1" AutoFitWidthPages="1" Scale="1">
+    <Margins Top="10" Left="5" Right="5" Bottom="10" />
+  </PrintSettings>
+  <Sections>
+    <Section ID="Ценник">
+      <LeftTop Row="0" Column="0" />
+      <RightBottom Row="9" Column="12" />
+    </Section>
+    <Section ID="Пусто">
+      <LeftTop Row="10" Column="0" />
+      <RightBottom Row="10" Column="12" />
+    </Section>
+  </Sections>
+  <BookMarks />
+  <Table RowsCount="11" ColumnsCount="13">
+    <Column Index="5" Width="7" />
+    <Row Height="4.5">
+      <Cell ColSpan="12" Style="ЛинияВокруг">
+        <TextContent Style="ТекстЦентр">
+          <Param Name="Фирма" Target="Text" Value="Фирма" />
+          <Param Name="Шрифт.Размер" Target="Style.Font.Size" Value="5" />
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="2">
+      <Cell RowSpan="3" ColSpan="12" Style="ЛинияСлеваСправа">
+        <TextContent Style="ЗаголовокЦентр" AutoSizeFont="true">
+          <Param Name="Наименование" Target="Text" Value="" />
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Index="5">
+      <Cell ColSpan="6" Style="ЛинияСлева">
+        <TextContent Style="Текст8">
+          <Param Name="Код" Value="" />
+          <Param Name="Шрифт.Стиль" Target="Style.Font.Style" Value="Regular,Bold" />
+          <Param Name="Шрифт.Размер" Target="Style.Font.Size" Value="9" />
+          <Text> Код: [Код]</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="7" RowSpan="1" ColSpan="5" Style="ЛинияСправа">
+        <TextContent>
+          <Param Name="Штрихкод" Target="Text" />
+          <Param Name="Шрифт.Стиль" Target="Style.Font.Style" Value="Regular,Bold" />
+          <Param Name="Шрифт" Target="Style.Font.Family" Value="Verdana" />
+          <Param Name="Шрифт.Размер" Target="Style.Font.Size" Value="7" />
+          <Text>ШК: [Штрихкод]</Text>
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="3">
+      <Cell ColSpan="6" Style="ЛинияСлева">
+        <TextContent Style="Текст8">
+          <Param Name="Артикул" Target="Text" Value="" />
+          <Param Name="Шрифт.Стиль" Target="Style.Font.Style" Value="Regular,Bold" />
+          <Param Name="Шрифт.Размер" Target="Style.Font.Size" Value="9" />
+          <Text> Арт: [Артикул]</Text>
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="5">
+      <Cell ColSpan="3" Style="ЛинияСлева">
+        <TextContent>
+          <Param Name="Now" Target="Text" Expression="now" Type="DateTime" Format="dd.MM.yy" />
+          <Param Name="Шрифт.Размер" Target="Style.Font.Size" Value="9" />
+          <Param Name="Шрифт" Target="Style.Font.Family" Value="Verdana" />
+        </TextContent>
+      </Cell>
+      <Cell Index="4" RowSpan="2" ColSpan="8" Style="ЛинияСправаВнизу">
+        <TextContent Style="Текст22ЦентрЖирный">
+          <Param Name="ЦенаРуб" Target="Value" Value="9999" Format="#0" />
+          <Param Name="ЦенаКоп" Target="Value" Value="99" Format="00" />
+          <Text>[ЦенаРуб],[ЦенаКоп]</Text>
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="3">
+      <Cell RowSpan="1" ColSpan="3" Style="ЛинияСлеваВнизу">
+        <TextContent Style="ТекстЦентр">
+          <Param Name="Единица измерения" Value="" />
+          <Param Name="Шрифт.Размер" Target="Style.Font.Size" Value="9" />
+          <Text>Цена за [Единица измерения]</Text>
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Index="10">
+      <Cell Index="12">
+        <TextContent />
+      </Cell>
+    </Row>
+  </Table>
+  <Styles>
+    <ExternalStyle Uri="file://DefaultStyles.xml" />
+    <TextContentStyle ID="Текст20ЦентрЖирный" Color="Black" Direction="LeftToRight" Angle="0">
+      <Alignment Horizontal="Center" Vertical="Middle" />
+      <Font Family="Verdana" Size="20" Style="Bold" />
+    </TextContentStyle>
+    <TextContentStyle ID="Текст16ЦентрЖирный" Color="Black" Direction="LeftToRight" Angle="0">
+      <Alignment Horizontal="Center" Vertical="Middle" />
+      <Font Family="Verdana" Size="16" Style="Bold" />
+    </TextContentStyle>
+  </Styles>
+  <Expressions>
+    <NowExpression ID="now" />
+    <NowExpression ID="Now" Freeze="true" />
+  </Expressions>
+</CellReportTemplate>

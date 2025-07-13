@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CellReportTemplate>
+  <Properties DefaultRowsCount="27" DefaultColumnsCount="22">
+    <DocumentName>Остатки товаров</DocumentName>
+  </Properties>
+  <ExportSettings RunExcelAfterExport="true" />
+  <DisplaySettings FrozenColumns="15" FrozenRows="7" ShowGridLines="false" ShowDesignerGridLines="true" ShowCurrentRows="true" ShowBookMarks="false" ShowResizers="false" ShowDesignerResizers="true" Scale="1" />
+  <PrintSettings Landscape="false" Copies="1" AutoFitWidthPages="1" Scale="1">
+    <Margins Top="10" Left="10" Right="10" Bottom="10" />
+  </PrintSettings>
+  <Sections>
+    <Section ID="Шапка">
+      <LeftTop Row="0" Column="0" />
+      <RightBottom Row="4" Column="16" />
+    </Section>
+    <Section ID="0">
+      <LeftTop Row="7" Column="0" />
+      <RightBottom Row="7" Column="16" />
+    </Section>
+    <Section ID="1">
+      <LeftTop Row="8" Column="0" />
+      <RightBottom Row="8" Column="16" />
+    </Section>
+    <Section ID="2">
+      <LeftTop Row="9" Column="0" />
+      <RightBottom Row="9" Column="16" />
+    </Section>
+    <Section ID="3">
+      <LeftTop Row="10" Column="0" />
+      <RightBottom Row="10" Column="16" />
+    </Section>
+    <Section ID="4">
+      <LeftTop Row="11" Column="0" />
+      <RightBottom Row="11" Column="16" />
+    </Section>
+    <Section ID="5">
+      <LeftTop Row="12" Column="0" />
+      <RightBottom Row="12" Column="16" />
+    </Section>
+    <Section ID="6">
+      <LeftTop Row="13" Column="0" />
+      <RightBottom Row="13" Column="16" />
+    </Section>
+    <Section ID="7">
+      <LeftTop Row="14" Column="0" />
+      <RightBottom Row="14" Column="16" />
+    </Section>
+    <Section ID="8">
+      <LeftTop Row="15" Column="0" />
+      <RightBottom Row="15" Column="16" />
+    </Section>
+    <Section ID="Подвал">
+      <LeftTop Row="16" Column="0" />
+      <RightBottom Row="17" Column="16" />
+    </Section>
+    <Section ID="Таблица" IsHeaderFixed="true">
+      <LeftTop Row="5" Column="0" />
+      <RightBottom Row="6" Column="16" />
+    </Section>
+  </Sections>
+  <BookMarks />
+  <Table RowsCount="18" ColumnsCount="17">
+    <Column Width="14" />
+    <Column Width="5" />
+    <Column Width="5" />
+    <Column Width="5" />
+    <Column Width="5" />
+    <Column Width="5" />
+    <Column Width="5" />
+    <Column Width="5" />
+    <Column Width="5" />
+    <Column Width="60" />
+    <Column Width="20" />
+    <Column Width="16" />
+    <Column Width="18.32292" />
+    <Column Width="20" MarkerForHide="СкрытьСебестоимость" />
+    <Column Width="24" MarkerForHide="СкрытьСебестоимость" />
+    <Column Width="26" />
+    <Column Width="0.3" />
+    <Row Height="6">
+      <Cell ColSpan="10">
+        <TextContent Style="Заголовок">
+          <Text>Остатки товаров</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="13" Style="Стиль 1" />
+      <Cell Index="15" Style="Стиль 1" />
+    </Row>
+    <Row Height="5">
+      <Cell ColSpan="10" Style="Стиль 1">
+        <TextContent Style="Текст">
+          <Param Name="ДатаНа" Value="" />
+          <Text>на: [ДатаНа]</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="15" Style="Стиль 1" />
+    </Row>
+    <Row Height="5" AutoFitHeight="true">
+      <Cell ColSpan="14" Style="Стиль 1">
+        <TextContent Style="Текст">
+          <Param Name="Товары" Target="Text" Value="" />
+          <Text>{{#if Товары}}По товарам: [Товары]{{#else}}По всем товарам{{/if}}</Text>
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="5">
+      <Cell ColSpan="14" Style="Стиль 1">
+        <TextContent Style="Текст">
+          <Param Name="Склады" Target="Text" Value="" />
+          <Text>{{#if Склады}}По складам: [Склады]{{#else}}По всем складам{{/if}}</Text>
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="5">
+      <Cell ColSpan="14" Style="Стиль 1">
+        <TextContent Style="Текст">
+          <Param Name="Поставщики" Target="Text" Value="" />
+          <Text>{{#if Поставщики}}По поставщикам: [Поставщики]{{#else}}По всем поставщикам{{/if}}</Text>
+        </TextContent>
+      </Cell>
+    </Row>
+    <Row Height="4.5">
+      <Cell RowSpan="1" Style="ЛинияВокруг">
+        <TextContent Style="ЗаголовокТаблицы">
+          <Text>№ п.п.</Text>
+        </TextContent>
+      </Cell>
+      <Cell RowSpan="1" ColSpan="8" Style="ЛинияВокруг">
+        <TextContent Style="ЗаголовокТаблицы">
+          <Param Name="Наименование" Target="Text" />
+          <Text>Наименование</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="10" RowSpan="1" Style="ЛинияВокруг">
+        <TextContent Style="ЗаголовокТаблицы">
+          <Text>Артикул</Text>
+        </TextContent>
+      </Cell>
+      <Cell RowSpan="1" Style="ЛинияВокруг">
+        <TextContent Style="ЗаголовокТаблицы">
+          <Text>Код</Text>
+        </TextContent>
+      </Cell>
+      <Cell RowSpan="1" Style="ЛинияВокруг">
+        <TextContent Style="ЗаголовокТаблицы">
+          <Text>Ед. изм.</Text>
+        </TextContent>
+      </Cell>
+      <Cell RowSpan="1" Style="ЛинияВокруг">
+        <TextContent Style="ЗаголовокТаблицы">
+          <Text>Кол-во</Text>
+        </TextContent>
+      </Cell>
+      <Cell ColSpan="1" Style="ЛинияВнизуСлеваВверху">
+        <TextContent Style="ЗаголовокТаблицы">
+          <Text>Себестоимость</Text>
+        </TextContent>
+      </Cell>
+      <Cell Index="16" Style="ЛинияВверхуСправа" />
+    </Row>
+    <Row Height="4.5">
+      <Cell Index="14" Style="ЛинияВокруг">
+        <TextContent Style="ЗаголовокТаблицы">
+          <Text>Цена</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="ЛинияСлеваВнизу">
+        <TextContent Style="ЗаголовокТаблицы">
+          <Text>Сумма</Text>
+        </TextContent>
+      </Cell>
+      <Cell Style="ЛинияСправаВнизу" />
+    </Row>
+    <Row Height="5" AutoFitHeight="true">
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Целое">
+          <Param Name="НомСтр" Target="Value" Value="" Expression="НомерСтроки" />
+        </DecimalContent>
+      </Cell>
+      <Cell ColSpan="8" Style="ЛинияВверхуВнизу">
+        <CollectionContent>
+          <ActionContent Type="MouseDblClick">
+            <Param Name="Code" Assign="this.Code" />
+            <Param Name="Type" Assign="this.ObjectName" />
+          </ActionContent>
+          <TextContent Style="Текст">
+            <Param Name="Наименование" Target="Text" />
+          </TextContent>
+        </CollectionContent>
+      </Cell>
+      <Cell Index="10" Style="ЛинияВокруг">
+        <TextContent>
+          <Param Name="Артикул" Target="Text" />
+        </TextContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Целое">
+          <Param Name="Код" Target="Value" Value="" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуВнизу">
+        <TextContent Style="ТекстЦентр">
+          <Param Name="Единица измерения" Target="Text" />
+        </TextContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Количество">
+          <Param Name="Кол" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Деньги">
+          <Param Name="Цена" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуВнизу">
+        <DecimalContent Style="Деньги">
+          <Param Name="Сум" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуСправаВнизу" />
+    </Row>
+    <Row Height="5" AutoFitHeight="true">
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Целое">
+          <Param Name="НомСтр" Target="Value" Expression="НомерСтроки" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell ColSpan="7" Style="ЛинияВверхуВнизу">
+        <CollectionContent>
+          <ActionContent Type="MouseDblClick">
+            <Param Name="Code" Assign="this.Code" />
+            <Param Name="Type" Assign="this.ObjectName" />
+          </ActionContent>
+          <TextContent Style="Текст">
+            <Param Name="Наименование" Target="Text" />
+          </TextContent>
+        </CollectionContent>
+      </Cell>
+      <Cell Index="10" Style="ЛинияВокруг">
+        <TextContent>
+          <Param Name="Артикул" Target="Text" />
+        </TextContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Целое">
+          <Param Name="Код" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуВнизу">
+        <TextContent Style="ТекстЦентр">
+          <Param Name="Единица измерения" Target="Text" />
+        </TextContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Количество">
+          <Param Name="Кол" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Деньги">
+          <Param Name="Цена" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуВнизу">
+        <DecimalContent Style="Деньги">
+          <Param Name="Сум" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуСправаВнизу" />
+    </Row>
+    <Row Height="5" AutoFitHeight="true">
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Целое">
+          <Param Name="НомСтр" Target="Value" Expression="НомерСтроки" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell ColSpan="6" Style="ЛинияВверхуВнизу">
+        <CollectionContent>
+          <ActionContent Type="MouseDblClick">
+            <Param Name="Code" Assign="this.Code" />
+            <Param Name="Type" Assign="this.ObjectName" />
+          </ActionContent>
+          <TextContent Style="Текст">
+            <Param Name="Наименование" Target="Text" />
+          </TextContent>
+        </CollectionContent>
+      </Cell>
+      <Cell Index="10" Style="ЛинияВокруг">
+        <TextContent>
+          <Param Name="Артикул" Target="Text" />
+        </TextContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Целое">
+          <Param Name="Код" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуВнизу">
+        <TextContent Style="ТекстЦентр">
+          <Param Name="Единица измерения" Target="Text" />
+        </TextContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Количество">
+          <Param Name="Кол" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Деньги">
+          <Param Name="Цена" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуВнизу">
+        <DecimalContent Style="Деньги">
+          <Param Name="Сум" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуСправаВнизу" />
+    </Row>
+    <Row Height="5" AutoFitHeight="true">
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Целое">
+          <Param Name="НомСтр" Target="Value" Expression="НомерСтроки" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell ColSpan="5" Style="ЛинияВверхуВнизу">
+        <CollectionContent>
+          <ActionContent Type="MouseDblClick">
+            <Param Name="Code" Assign="this.Code" />
+            <Param Name="Type" Assign="this.ObjectName" />
+          </ActionContent>
+          <TextContent Style="Текст">
+            <Param Name="Наименование" Target="Text" />
+          </TextContent>
+        </CollectionContent>
+      </Cell>
+      <Cell Index="10" Style="ЛинияВокруг">
+        <TextContent>
+          <Param Name="Артикул" Target="Text" />
+        </TextContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Целое">
+          <Param Name="Код" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуВнизу">
+        <TextContent Style="ТекстЦентр">
+          <Param Name="Единица измерения" Target="Text" />
+        </TextContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Количество">
+          <Param Name="Кол" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Деньги">
+          <Param Name="Цена" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуВнизу">
+        <DecimalContent Style="Деньги">
+          <Param Name="Сум" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуСправаВнизу" />
+    </Row>
+    <Row Height="5" AutoFitHeight="true">
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Целое">
+          <Param Name="НомСтр" Target="Value" Expression="НомерСтроки" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell ColSpan="4" Style="ЛинияВверхуВнизу">
+        <CollectionContent>
+          <ActionContent Type="MouseDblClick">
+            <Param Name="Code" Assign="this.Code" />
+            <Param Name="Type" Assign="this.ObjectName" />
+          </ActionContent>
+          <TextContent Style="Текст">
+            <Param Name="Наименование" Target="Text" />
+          </TextContent>
+        </CollectionContent>
+      </Cell>
+      <Cell Index="10" Style="ЛинияВокруг">
+        <TextContent>
+          <Param Name="Артикул" Target="Text" />
+        </TextContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Целое">
+          <Param Name="Код" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуВнизу">
+        <TextContent Style="ТекстЦентр">
+          <Param Name="Единица измерения" Target="Text" />
+        </TextContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Количество">
+          <Param Name="Кол" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Деньги">
+          <Param Name="Цена" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуВнизу">
+        <DecimalContent Style="Деньги">
+          <Param Name="Сум" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуСправаВнизу" />
+    </Row>
+    <Row Height="5" AutoFitHeight="true">
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Целое">
+          <Param Name="НомСтр" Target="Value" Expression="НомерСтроки" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell ColSpan="3" Style="ЛинияВверхуВнизу">
+        <CollectionContent>
+          <ActionContent Type="MouseDblClick">
+            <Param Name="Code" Assign="this.Code" />
+            <Param Name="Type" Assign="this.ObjectName" />
+          </ActionContent>
+          <TextContent Style="Текст">
+            <Param Name="Наименование" Target="Text" />
+          </TextContent>
+        </CollectionContent>
+      </Cell>
+      <Cell Index="10" Style="ЛинияВокруг">
+        <TextContent>
+          <Param Name="Артикул" Target="Text" />
+        </TextContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Целое">
+          <Param Name="Код" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуВнизу">
+        <TextContent Style="ТекстЦентр">
+          <Param Name="Единица измерения" Target="Text" />
+        </TextContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Количество">
+          <Param Name="Кол" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Деньги">
+          <Param Name="Цена" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуВнизу">
+        <DecimalContent Style="Деньги">
+          <Param Name="Сум" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуСправаВнизу" />
+    </Row>
+    <Row Height="5" AutoFitHeight="true">
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Целое">
+          <Param Name="НомСтр" Target="Value" Expression="НомерСтроки" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell ColSpan="2" Style="ЛинияВверхуВнизу">
+        <CollectionContent>
+          <ActionContent Type="MouseDblClick">
+            <Param Name="Code" Assign="this.Code" />
+            <Param Name="Type" Assign="this.ObjectName" />
+          </ActionContent>
+          <TextContent Style="Текст">
+            <Param Name="Наименование" Target="Text" />
+          </TextContent>
+        </CollectionContent>
+      </Cell>
+      <Cell Index="10" Style="ЛинияВокруг">
+        <TextContent>
+          <Param Name="Артикул" Target="Text" />
+        </TextContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Целое">
+          <Param Name="Код" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуВнизу">
+        <TextContent Style="ТекстЦентр">
+          <Param Name="Единица измерения" Target="Text" />
+        </TextContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Количество">
+          <Param Name="Кол" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Деньги">
+          <Param Name="Цена" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуВнизу">
+        <DecimalContent Style="Деньги">
+          <Param Name="Сум" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуСправаВнизу" />
+    </Row>
+    <Row Height="5" AutoFitHeight="true">
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Целое">
+          <Param Name="НомСтр" Target="Value" Expression="НомерСтроки" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell ColSpan="1" Style="ЛинияВверхуВнизу">
+        <CollectionContent>
+          <ActionContent Type="MouseDblClick">
+            <Param Name="Code" Assign="this.Code" />
+            <Param Name="Type" Assign="this.ObjectName" />
+          </ActionContent>
+          <TextContent Style="Текст">
+            <Param Name="Наименование" Target="Text" />
+          </TextContent>
+        </CollectionContent>
+      </Cell>
+      <Cell Index="10" Style="ЛинияВокруг">
+        <TextContent>
+          <Param Name="Артикул" Target="Text" />
+        </TextContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Целое">
+          <Param Name="Код" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуВнизу">
+        <TextContent Style="ТекстЦентр">
+          <Param Name="Единица измерения" Target="Text" />
+        </TextContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Количество">
+          <Param Name="Кол" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Деньги">
+          <Param Name="Цена" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуВнизу">
+        <DecimalContent Style="Деньги">
+          <Param Name="Сум" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуСправаВнизу" />
+    </Row>
+    <Row Height="5" AutoFitHeight="true">
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Целое">
+          <Param Name="НомСтр" Target="Value" Expression="НомерСтроки" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell Style="ЛинияВверхуВнизу" />
+      <Cell Style="ЛинияВверхуВнизу">
+        <CollectionContent>
+          <ActionContent Type="MouseDblClick">
+            <Param Name="Code" Assign="this.Code" />
+            <Param Name="Type" Assign="this.ObjectName" />
+          </ActionContent>
+          <TextContent Style="Текст">
+            <Param Name="Наименование" Target="Text" />
+          </TextContent>
+        </CollectionContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <TextContent>
+          <Param Name="Артикул" Target="Text" />
+        </TextContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Целое">
+          <Param Name="Код" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуВнизу">
+        <TextContent Style="ТекстЦентр">
+          <Param Name="Единица измерения" Target="Text" />
+        </TextContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Количество">
+          <Param Name="Кол" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВокруг">
+        <DecimalContent Style="Деньги">
+          <Param Name="Цена" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуВнизу">
+        <DecimalContent Style="Деньги">
+          <Param Name="Сум" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell Style="ЛинияВверхуСправаВнизу" />
+    </Row>
+    <Row Height="2">
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+      <Cell Style="ЖирнаяЛинияВнизу" />
+    </Row>
+    <Row Height="4.5">
+      <Cell Index="1" Style="Стиль 1" />
+      <Cell Style="Стиль 1" />
+      <Cell Style="Стиль 1" />
+      <Cell Style="Стиль 1" />
+      <Cell Style="Стиль 1" />
+      <Cell Style="Стиль 1" />
+      <Cell />
+      <Cell Style="Стиль 1" />
+      <Cell Style="Стиль 1">
+        <TextContent Style="ТекстСправа">
+          <Param Name="Итого:" Target="Text" />
+          <Text>Итого:</Text>
+        </TextContent>
+      </Cell>
+      <Cell />
+      <Cell />
+      <Cell />
+      <Cell>
+        <DecimalContent Style="КоличествоЖирным">
+          <Param Name="Кол" Target="Value" />
+        </DecimalContent>
+      </Cell>
+      <Cell />
+      <Cell>
+        <DecimalContent Style="ДеньгиЖирным">
+          <Param Name="Сум" Target="Value" />
+        </DecimalContent>
+      </Cell>
+    </Row>
+  </Table>
+  <Styles>
+    <ExternalStyle Uri="file://DefaultStyles.xml" />
+    <CellStyle ID="Стиль 1" />
+  </Styles>
+  <Expressions>
+    <CountExpression ID="НомерСтроки" Start="1" Increment="1" />
+    <NowExpression ID="Now" Freeze="true" />
+  </Expressions>
+</CellReportTemplate>
